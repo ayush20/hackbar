@@ -1,0 +1,18 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' ",
+   "description": "Simple security audit / Penetration test tool",
+   "icons": {
+      "48": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm1HWJEmZv+CZNU2kzf4xS2k/lR3KlbtrTPY3Y+J1ySuJM4NUPiOb6fNyuOrEpFVxDGnu1ytCvu9h5u/Q42tcXiSrJKiYH2PeIE2kmngYGhGS1S4uli974eQO7o7SFZ1dVdeQsK3civciEHKaj0aZ04P2GCcatXzaGzVsXZwaK7tk3u7R4iz1XQtI6Rvvi45XGlVYtvs2oA/Ex0I43udXnzYpk8F7AZ7Pb7+OeMRr9E5+aCtoGgP55pGs1fVSi/7RdIbrWiyDZVJmaIJYju8/7N0GB0VmFRbF0ZDuVlez7oLM65z4y9KYTz3VQTUZrB5f7rTPJg2Rdnv39zKCKXX5EQIDAQAB",
+   "manifest_version": 2,
+   "name": "HackBar",
+   "permissions": [ "tabs", "cookies", "activeTab", "\u003Call_urls>", "*://*/*", "background", "webRequest", "webRequestBlocking", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.2",
+   "web_accessible_resources": [ "iframe.html" ]
+}
