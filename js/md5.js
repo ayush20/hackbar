@@ -2,7 +2,7 @@
 Created By Ayush Gupta
 On 12 October 2014
 */
-function md6(str) {
+function md5(str) {
   var xl;
 
   var rotateLeft = function(lValue, iShiftBits) {
