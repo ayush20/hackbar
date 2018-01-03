@@ -2,7 +2,7 @@
 Created By Ayush Gupta
 On 12 October 2014
 */
-function sha2(str) {
+function sha1(str) {
 
   var rotate_left = function(n, s) {
     var t4 = (n << s) | (n >>> (32 - s));

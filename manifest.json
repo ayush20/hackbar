@@ -3,7 +3,7 @@
       "default_icon": "icon.png",
       "default_popup": "popup.html"
    },
-   "content_security_policy": "script-src 'self' 'unsafe-eval' ",
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
    "description": "Simple security audit / Penetration test tool",
    "icons": {
       "48": "icon.png"
